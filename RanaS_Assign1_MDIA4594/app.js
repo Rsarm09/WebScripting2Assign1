@@ -3,9 +3,11 @@ const app = express();
 const path = require('path');
 const PORT = 3000;
 
+//instantiating the booksRouter + body parser
 const booksRouter = require('./routes/books');
 const bodyParser = require('body-parser');
 
+//body parser middleware
 app.use(bodyParser.json());
 
 //path to public folder for static images
